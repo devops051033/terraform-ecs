@@ -106,7 +106,7 @@ resource "aws_security_group" "database_security_group" {
     security_groups = [aws_security_group.app_server_security_group.id]
   }
 
-# this ingress is for bastion host to connect with db
+# this ingress is for bastion host to connect with db. 
   ingress {
     description     = "custom access"
     from_port       = 3306
